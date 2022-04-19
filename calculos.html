@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+
+    function mostra(mensagem) {
+        document.write(mensagem);
+        pulaLinha();
+    }
+
+
+    function somaDespesas(conta, comida) {
+        return somaDespesas = conta + comida;
+
+    }
+
+
+    alert("Olá, você! Aqui está uma ferramente básica para que você possa calcular as suas despesas!");
+
+     var conta = parseInt(prompt("Por favor, informe o valor de alguma conta sua!"));
+     var comida = parseInt(prompt("Perfeito! Agora informe outra dispesa:", ""));
+
+    alert("Só um minuto que estou aqui calculando... :)")
+
+
+     var despesas = somaDespesas(conta, comida);
+
+     mostra("<big>O total dos seus gastos este mês, infelizmente, é de: " + "R$" + despesas + "</big>");
+     mostra("Espero que não tenha te deixado triste!")
+
+
+
+    </script>
